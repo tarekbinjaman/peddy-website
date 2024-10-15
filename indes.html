@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peddy website</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header section start here -->
+    <header>
+        <nav class="w-11/12 mx-auto mt-12 flex justify-between items-center">
+            <div class="flex items-center gap-2 cursor-pointer">
+                <!-- img -->
+                 <img class="" src="images/logo.webp" alt="">
+                 <span class="font-bold text-lg">Peddy</span>
+                 <!-- logo text -->
+            </div>
+            <div class="hidden lg:block ">
+                <ul class="flex gap-6 font-medium">
+                    <li class="cursor-pointer">Home</li>
+                    <li class="cursor-pointer">Shop</li>
+                    <li class="cursor-pointer">Contact</li>
+                </ul>
+            </div>
+            <div>
+                <img class="w-8 h-8 cursor-pointer" src="https://img.icons8.com/?size=40&id=zYQDIb6UB5Pk&format=png" alt="">
+            </div>
+        </nav>
+    </header>
+    <main class="w-11/12 mx-auto">
+        <!-- section-1 (text and button area) -->
+        <section class="mt-10 lg:pl-16 items-center">
+            <div class="text-center flex flex-col">
+                <h4 class="text-lg font-medium text-gray-500">Bringing Families Together ❤️‍🔥 </h4>
+                <h2 class="text-5xl font-bold mt-6 leading-12">Your Path to Adoption <br>Starts Here</h2>
+                <p class="text-sm font-normal mt-6">It is a long established fact that a reader will be distracted by the readable content of a page when looking <br>at its layout. The point of using Lorem Ipsum is that it has a.</p>
+                <div class="mt-6">
+                    <a href="#taregetSection">
+                        <button class="btn px-8 bg-gray-400 text-white">Show all</button>
+                    </a>
+                    
+                </div>
+                <!-- bit img  -->
+                
+            </div>
+            <div class="flex justify-center mt-12 mb-12">
+                <img class="w-[50%]" src="images/pet.webp" alt="">
+             </div>
+        </section>
+        <!-- section-2 (main section) -->
+         <section id="taregetSection" class="mt-8">
+            <div>
+                <!-- text area -->
+                <div class="flex flex-col justify-center items-center">
+                    <h2 class="text-3xl font-bold">Adopt  Your  Best Friend</h2>
+                    <p class="text-center text-sm mt-4">It is a long established fact that a reader will be distracted by the readable content of a <br>page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+                </div>
+                <!-- Categories area -->
+                <div id="categories" class="flex gap-44 justify-center mt-16">
+
+                </div>
+                <div class="flex justify-between mt-12 items-center">
+                    <h2 class="text-2xl font-bold">Best deal for you</h2>
+                    <button class="btn bg-gray-300">Sort by price</button>
+                </div>
+                <!-- card section -->
+                <div class="grid grid-cols-[70%_30%] gap-2 mt-8">
+                    <!-- first grid which width is 80% -->
+                    <div id="pet-list" class="border border-blue-500 p-4 rounded grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                    </div>
+                    <!-- second grid which width is 20% -->
+                    <div id="cart-list" class="border border-blue-500 rounded grid grid-cols-1 md:grid-cols-4 lg:grid-cols-2 h-auto lg:h-64 md:h-20"></div>
+                </div>
+            </div>
+         </section>
+         <button id="modalButton" class="btn hidden" onclick="my_modal_5.showModal()">open modal</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+   <div id="modal-div"></div>
+    <div class="modal-action justify-center items-center">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+            <button class="btn text-center px-8 bg-green-300">Close</button>
+        
+      </form>
+    </div>
+  </div>
+</dialog>
+    </main>
+    <footer></footer>
+<script src="js/js1.js"></script>    
+</body>
+</html>
